@@ -30,9 +30,9 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Layout>
+ 
       <div>
-        {/* <Router> */}
+        <Router>
           <Routes>
           {/* <Route exact path='/' element={Home} /> */}
             <Route path='/counter' element={Counter} />
@@ -43,9 +43,8 @@ function App() {
             <Route exact path="/reset" element={<Reset />} />
             <Route exact path="/dashboard" element={<Dashboard />} />
           </Routes>
-      {/* </Router> */}
+      </Router>
       </div>
-      </Layout>
   );
 }
 
